@@ -11,11 +11,12 @@ class Cliente():
     def comprar(self, producto, lugar):
         self.producto = producto
         self.lugar = lugar
-        print (f"El cliente ha comprado {self.producto} en {self.lugar}")
-    
-    def actualizardireccion(self, nombrecalle, numerocalle):
-        self.nombrecalle = nombrecalle
-        self.numerocalle = numerocalle
-        print (f"Se ha actualizado la direccion a {nombrecalle} {numerocalle}")
+        return self.producto, self.lugar
         
+    def realizar_encuesta(self, puntuacion):
+        self.puntuacion = puntuacion
+        return self.puntuacion
     
+    def actualizar_correo(self, mail):
+        self.mail = mail
+        return self.mail

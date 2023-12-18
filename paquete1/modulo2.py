@@ -14,7 +14,6 @@ def user_registro():
   return nombre, contra
 
 
-
 def user_login():
   nombrelogin=input("Ingrese su nombre de usuario: ")
   contralogin=input("Ingrese su contraseña: ")
@@ -26,14 +25,19 @@ def user_login():
     print("Usuario no reconocido.")
 
 def menu():
-  registro=input("Para iniciar sesión pulse la tecla i. Para registrarse pulse la tecla r:  ")
-  if registro =="i":
-    user_login()
-  else:
-    user_registro()
-  datosingresados=input("Si desea ver los datos de los usuarios registrados, pulse la tecla s:  ")
-  if datosingresados=="s":
-    database()
-  menu()
+  bienvenido=int(input("Bienvenido, pulse 1 para continuar. Pulse 2 para salir: "))
+  while bienvenido==1:
+    registro=input("Para iniciar sesión pulse la tecla i. Para registrarse pulse la tecla r:  ")
+    if registro =="i":
+      user_login()
+    else:
+      user_registro()
+    datosingresados=input("Si desea ver los datos de los usuarios registrados, pulse la tecla s:  ")
+    if datosingresados=="s":
+      database()
+    bienvenido=int(input("Pulse 1 si desea iniciar sesión / registrarse con otro usuario. Pulse 2 para salir: "))
+  print("Programa finalizado")
+
+
 
 menu()
