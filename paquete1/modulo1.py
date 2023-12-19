@@ -8,10 +8,10 @@ class Cliente():
     def __str__(self):
         return f"Se ha creado el cliente {self.nombre}, {self.genero} de {self.edad} años"
     
-    def comprar(self, producto, lugar):
+    def comprar(self, producto, sucursal):
         self.producto = producto
-        self.lugar = lugar
-        return self.producto, self.lugar
+        self.sucursal = sucursal
+        return self.producto, self.sucursal
         
     def realizar_encuesta(self, puntuacion):
         self.puntuacion = puntuacion

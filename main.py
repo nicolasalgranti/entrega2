@@ -6,7 +6,7 @@ cliente = Cliente("Nicolas", "nicolasalgranti@gmail.com", 21, "hombre")
 
 print(cliente)
 
-cliente.comprar("pochoclos", "cine")
+cliente.comprar("Laptop", "Avellaneda")
 
 cliente.realizar_encuesta("nueve")
 
