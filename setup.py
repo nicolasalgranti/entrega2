@@ -5,6 +5,6 @@ setup (
     version="1.0",
     author="Nicolas Algranti",
     author_email="nicolasalgranti@gmail.com",
-    packages=["paquete1"]
-    
+
+    packages=["paquete1"],
 )
